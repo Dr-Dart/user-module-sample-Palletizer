@@ -1,0 +1,185 @@
+$input-border: 1px solid rgb(215, 220, 224);
+$minimun-screen-size: 900px;
+.gripper-screen {
+  background-color: #fff;
+  flex: 1;
+  margin: 32px;
+
+  .tcp-position {
+    .form-label-textfield {
+      padding-right: 10px;
+    }
+  }
+  .flange-io {
+    max-width: 7em;
+  }
+  .action-space {
+    .gripper-status {
+      max-width: 3em !important;
+      display: flex;
+      align-items: center;
+      height: 2.5em;
+    }
+    .action-title {
+      max-width: 4em;
+      display: flex;
+      align-items: center;
+      height: 2.5em;
+    }
+    .form-select {
+      height: 2.5em !important;
+      margin: unset;
+      width: 100%;
+      [class*='MuiOutlinedInput-notchedOutline'] {
+        top: 0px;
+      }
+    }
+    .test-button {
+      width: 100%;
+      text-transform: unset;
+      height: 2.5em;
+    }
+  }
+  .select-grip-container {
+    &[class*='MuiFormGroup-root'] {
+      max-height: 468px;
+      overflow: auto;
+    }
+    .grip-item {
+      &[class*='MuiGrid-root'] {
+        width: 20%;
+        margin-bottom: 16px;
+      }
+      > div {
+        border: unset;
+      }
+      > div > button {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .gripper-select-container {
+    &[class*='MuiGrid-root'] {
+      max-height: 300px;
+      overflow: auto;
+      justify-content: flex-start;
+    }
+  }
+  .radio-btn {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2), inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+
+    &--checked {
+      @extend .radio-btn;
+      background-color: #137cbd;
+      background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0));
+
+      &:before {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: radial-gradient(#fff, #fff 28%, transparent 32%);
+        content: '';
+      }
+    }
+  }
+  .gripper-items {
+    &[class*='MuiGrid-root'] {
+      max-width: 176px;
+      margin-right: 24px;
+    }
+    .card-items {
+      &[class*='MuiPaper-root'] {
+        box-shadow: unset;
+      }
+      > button > p {
+        display: inline;
+        font-size: 0.875em;
+      }
+    }
+  }
+  .grip-image {
+    display: block;
+    width: 100%;
+    &--producer {
+      @extend .grip-image;
+      margin: 10px;
+      // width: unset;
+      margin-right: 16px;
+      max-width: 12em;
+    }
+  }
+  @media only screen and (max-width: $minimun-screen-size) {
+    .test-button {
+      padding: 4px 6px;
+    }
+  }
+}
+
+.form-label-textfield {
+  &[class*='MuiFormControl-root'] {
+    display: block;
+    margin-top: 1em;
+    height: 36px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+  }
+
+  [class*='MuiInputBase-root'] {
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  [class*='MuiInputAdornment-root'] {
+    margin-right: 1px;
+  }
+
+  div {
+    input {
+      text-align: right;
+      font-size: 0.8em;
+      line-height: 20px;
+      padding: 8px 0px;
+      border-radius: 3px;
+    }
+  }
+  &.text-align-left {
+    input {
+      text-align: left;
+    }
+  }
+  p {
+    &[class*='MuiFormHelperText-root'] {
+      width: 500px;
+      font-size: 0.75em;
+      margin: 0;
+    }
+  }
+
+  [class*='MuiTypography-root'] {
+    font-size: 0.8em;
+  }
+  > div {
+    > div:first-child {
+      border-right: $input-border;
+      height: 60%;
+      padding-right: 0px;
+      p {
+        padding-right: 4px;
+      }
+    }
+  }
+}
+.grid-ctn {
+height: auto;
+position: relative;
+padding-bottom: 76px;
+}
+.typo-tool {
+font-weight: 400;
+font-size: 12px;
+margin: 5px 0px;
+flex: 1 0 100%;
+}

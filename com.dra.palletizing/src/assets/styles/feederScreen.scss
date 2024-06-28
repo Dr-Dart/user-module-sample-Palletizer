@@ -1,0 +1,187 @@
+.in-feeder-screen {
+  padding-bottom: 80px !important;
+  .product-position {
+    width: 100%;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .button-position {
+    margin-top: 2em;
+  }
+}
+
+.out-feeder-screen {
+  .overhang-container {
+    .inline-grid {
+      display: flex;
+      width: 100%;
+      margin-left: -8px;
+    }
+
+    .over-under-hang {
+      display: flex;
+
+      .overhang {
+        display: flex;
+
+        .label {
+          display: flex;
+        }
+
+        .label span {
+          font-size: 0.875em;
+        }
+
+        .form-label-textfield {
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+    }
+
+    .define-product-item-form-helper {
+      &[class*='MuiFormHelperText-root'] {
+        color: rgb(255, 0, 0);
+        word-wrap: break-word;
+        width: 136px;
+        text-align: right;
+        font-size: 0.625em;
+      }
+    }
+
+    .container-image {
+      padding-right: 40px;
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 25px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #000000;
+  }
+}
+
+.out-feeder-screen {
+  .out-feeder-container {
+    width: 100%;
+
+    .overhang-container {
+      .inline-grid {
+        display: flex;
+      }
+    }
+
+    // TuPT5 start box padding
+    .box-padding-container {
+      .increase-width {
+        &[class*='MuiFormControl-root'] {
+          width: 200%;
+        }
+      }
+    }
+
+    // TuPT5 end box padding
+
+    // TuPT5 start max layer
+    .max-layer-container {
+      margin-top: 32px;
+      display: block;
+
+      .grid-item-text {
+        padding-top: 10px;
+        margin-right: 20px;
+      }
+
+      .max-layer-item {
+        font-weight: 700;
+        font-size: 1.125em;
+        line-height: 25px;
+        margin-bottom: 12px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+      }
+    }
+
+    // TuPT5 end max layer
+  }
+}
+
+.in-feeder-screen,
+.out-feeder-screen {
+  @media screen and (min-width: 1200px) {
+    .define-pallet-layer {
+      padding-right: 33px;
+    }
+  }
+
+  .product-position {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 32px;
+
+    .product {
+      @extend .product-position;
+      margin-top: unset;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: relative;
+
+      .position-action-container {
+        position: absolute;
+        top: 111px;
+        padding-right: 33px;
+      }
+    }
+
+    &--title {
+      &[class*='MuiTypography-root'] {
+        font-weight: 700;
+        font-size: 1.125em;
+        line-height: 25px;
+        margin: unset;
+      }
+    }
+
+    .warning-content {
+      margin: 16px 0;
+
+      &[class*='MuiContainer-root'] {
+        padding: unset;
+        display: flex;
+        align-items: center;
+      }
+
+      > svg {
+        margin-right: 9px;
+        color: #e08809;
+      }
+    }
+
+    .input-container {
+      display: flex;
+      flex-flow: row wrap;
+      padding: unset;
+      margin: unset;
+      justify-content: space-between;
+
+      [class*='MuiFormControl-root'] {
+        width: 30%;
+        margin-top: 18px;
+      }
+
+      & > div {
+        margin-right: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .define-pallet-layer {
+    padding-right: unset !important;
+  }
+}

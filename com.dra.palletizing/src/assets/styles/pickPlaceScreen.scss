@@ -1,0 +1,68 @@
+.pick-place-screen {
+  .check-position {
+    margin-top: 32px;
+    .title {
+      font-weight: 700;
+      font-size: 1.125em;
+      margin: unset;
+      color: #000000;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .initial-pose {
+      padding-right: 33px;
+    }
+    .check-position {
+      position: relative;
+      .position-action-container {
+        position: absolute;
+        top: 32px;
+        padding-right: 33px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .initial-pose {
+      padding: unset;
+      margin-bottom: 33px;
+    }
+    .check-position {
+      .title {
+        margin-bottom: 16px;
+      }
+      .guided-image {
+        padding: unset;
+        position: unset;
+        top: unset;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .check-place-position {
+    margin-top: 32px;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.pd-bot {
+  padding-bottom: 80px !important;
+}
+
+.pd-right {
+  padding-right: 10px !important;
+}
+
+.typo-approacht-dis {
+  font-size: 0.75rem;
+  margin-bottom: 0px;
+}
+
+.grid-approach-pose {
+  margin-top: 0.125em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.grid-text-field {
+  margin-bottom: 80px;
+}

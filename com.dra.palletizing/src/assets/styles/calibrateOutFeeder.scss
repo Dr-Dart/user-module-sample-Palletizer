@@ -1,0 +1,119 @@
+.calibration-screen {
+  .calib-position--field {
+    width: 30%;
+    margin-top: 18px;
+    height: 36px;
+    > div {
+      font-size: 14px;
+      height: 100%;
+      > input {
+        text-align: right;
+      }
+      > div:first-child {
+        > [class*='MuiTypography-root'] {
+          padding-right: 7px;
+          border-right: 1px solid rgba(133, 130, 130, 0.6);
+        }
+      }
+    }
+    > [class*='MuiOutlinedInput-root'] {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+  .optional-point {
+    margin-top: 24px;
+    > p {
+      display: inline;
+    }
+    &--custom {
+      &[class*='MuiContainer-root'] {
+        padding: unset;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+      > div {
+        width: 33%;
+      }
+      > div:last-child {
+        width: 100%;
+      }
+    }
+  }
+  .custom-table {
+    > thead > tr > th {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      padding: unset;
+      padding: 16px 0px;
+    }
+    > thead > tr > th:first-child {
+      width: 70%;
+    }
+    thead > tr > th:first-child ~ th {
+      width: 30%;
+      text-align: center;
+    }
+    > tbody > tr > th {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      padding: unset;
+    }
+    > tbody > tr > td {
+      padding: unset;
+      padding: 16px 0px;
+      > div {
+        margin-top: unset;
+        > div > input {
+          -webkit-text-fill-color: unset;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .out-feeder-simulation {
+    margin-top: 32px;
+    .title {
+      margin: unset;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .calib-point {
+      padding-right: 33px;
+    }
+    .out-feeder-simulation {
+      position: relative;
+      > div:first-child {
+        padding-right: 33px;
+      }
+      > div:nth-child(3) {
+        padding-right: 33px;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .calib-point {
+      padding: unset;
+      margin-bottom: 33px;
+    }
+    .out-feeder-simulation {
+      > div:first-child {
+        padding: unset;
+        margin-bottom: 24px;
+      }
+      > div:nth-child(3) {
+        padding: unset;
+        position: unset;
+        top: unset;
+      }
+    }
+  }
+}

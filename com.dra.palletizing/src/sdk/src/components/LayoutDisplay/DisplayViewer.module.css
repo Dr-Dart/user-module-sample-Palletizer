@@ -1,0 +1,11 @@
+.background {
+    width: 100%;
+    max-width: 850px;
+    min-width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(122, 122, 110);
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+}

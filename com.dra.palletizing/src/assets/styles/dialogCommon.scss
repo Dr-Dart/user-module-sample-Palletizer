@@ -1,0 +1,105 @@
+.common-dialog {
+  [class*='MuiDialog-paper'] {
+    width: 600px;
+  }
+  .dialog-content-container-block {
+    display: grid;
+    .dialog-content-container {
+      display: grid;
+      row-gap: 15px;
+      .dialog-content-title {
+        display: flex;
+        .alert-icon {
+          border-radius: 50%;
+        }
+        .label {
+          width: 90%;
+          font-size: 16px;
+          font-weight: 700;
+          margin-left: 10px;
+          color: #000;
+        }
+        .icon-container {
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          &:hover {
+            background: none;
+          }
+          &:focus {
+            background: none;
+          }
+          button {
+            background: none;
+          }
+          span {
+            background: none;
+          }
+        }
+        .cancel-icon {
+          color: #000;
+        }
+      }
+      .dialog-content {
+        margin-left: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        .label-save-as {
+          color: rgb(46, 55, 69);
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .label-ip {
+          @extend .label-save-as;
+          margin-top: 20px;
+        }
+        .input-filename-save-as {
+          &[class*='MuiFormControl-root'] {
+            display: block;
+            margin-top: 1em;
+            height: 36px;
+            background: rgb(255, 255, 255);
+            box-sizing: border-box;
+          }
+
+          [class*='MuiInputBase-root'] {
+            width: 100%;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+          }
+
+          div {
+            width: 100%;
+            input {
+              text-align: left;
+              font-size: 0.875em;
+              padding: 8px 0px;
+              border-radius: 3px;
+              align-items: center;
+            }
+          }
+          fieldset {
+            top: -2px;
+          }
+          &.text-align-left {
+            input {
+              text-align: left;
+            }
+          }
+          p {
+            &[class*='MuiFormHelperText-root'] {
+              width: 500px;
+              font-size: 0.75em;
+              margin: 0;
+            }
+          }
+
+          [class*='MuiTypography-root'] {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}

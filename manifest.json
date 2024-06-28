@@ -1,0 +1,9 @@
+{
+    "name": "Palletizer",
+    "packageName": "com.dra.palletizing",
+    "version": "1.7.0",
+    "sdkVersion": "1",
+    "icon": "assets/images/icon.png",
+    "drscModulePackageFile": "drsc_com.dra.palletizing.dm",
+    "drcfModulePackageFile": ""
+}

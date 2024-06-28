@@ -1,0 +1,19 @@
+{
+    "main": "index.bundle.js",
+    "usesPermissions": [],
+    "supportedLanguages": [],
+    "requiredPackageNames": [],
+    "type": "PROCESS",
+    "screens": [
+        {
+            "name": "Palletizer",
+            "id": "MainScreen",
+            "messageFilters": [
+                {
+                    "action": "dart.message.action.MAIN",
+                    "category": "dart.message.category.SCREEN"
+                }
+            ]
+        }
+    ]
+}

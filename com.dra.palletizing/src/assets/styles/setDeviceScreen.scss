@@ -1,0 +1,71 @@
+.device-screen {
+  .table {
+    margin-bottom: 15px;
+    padding-right: 30px;
+
+    .align-center-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .table-header {
+      @extend .align-center-item;
+      font-weight: 700;
+      font-size: 0.875em;
+      line-height: 20px;
+      color: #565a68;
+      border-bottom: 1px solid #d7dce0;
+      padding-bottom: 16px;
+    }
+
+    .table-content {
+      @extend .align-center-item;
+      border-bottom: 1px solid #d7dce0;
+      padding-bottom: 16px;
+      color: #2e3745;
+      font-weight: 500;
+      font-size: 0.875em;
+      line-height: 20px;
+    }
+
+
+    .setting-button {
+      text-transform: none;
+      font-weight: 400;
+      font-size: 0.875em;
+      box-shadow: none;
+      border: 1px solid #d7dce0;
+      color: #2e3745;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      &.focus {
+        box-shadow: none;
+      }
+    }
+
+    .test-button {
+      color: rgb(255, 255, 255);
+      text-transform: none;
+      box-shadow: none;
+      font-size: 0.875em;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.hover {
+        box-shadow: none;
+      }
+
+      margin: 0px 3px;
+    }
+  }
+}
+
+.grid-width {
+  width: 100% !important;
+}

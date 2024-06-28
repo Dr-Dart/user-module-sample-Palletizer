@@ -1,0 +1,33 @@
+.btn {
+    height: 40px;
+    max-width: 40px;
+    padding: 5px !important;
+    background-color: white !important;
+    box-sizing: border-box;
+    color: black !important;
+    border: 1px solid #c4c4c4 !important;
+}
+@media (hover: hover) {
+    .btn:hover {
+        background-color: #e5f4ff !important;
+        border: 2px solid #5cabf4 !important;
+        color: #5cabf4 !important;
+    }
+  }
+
+.firstBtn:hover {
+    border-bottom: 1px solid #5cabf4 !important;
+}
+
+.rotateBtn {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    z-index: 1
+}
+.clicker {
+    color: #5cabf4 !important;
+    border: #5cabf4 2px solid !important;
+    background-color: #e5f4ff !important;
+}
+
